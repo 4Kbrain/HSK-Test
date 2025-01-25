@@ -1,0 +1,300 @@
+啊, ah, oh, particle, noun, confirmation 
+阿姨, aunt, grandmother, teacher, cousin  
+矮, short (height), tall, wide, fat  
+爱好, hobby, profession, family, job  
+安静, quiet, noisy, loud, messy  
+把, handle, throw, eat, buy  
+班, class, family, dog, car  
+搬, move (location), sleep, jump, hide  
+办法, method, excuse, apology, mistake  
+办公室, office, kitchen, restaurant, store  
+半, half, whole, quarter, minute  
+帮忙, help, hinder, ignore, refuse  
+包, bag, car, desk, chair  
+饱, full (after eating), hungry, tired, thirsty  
+北方, north, south, east, west  
+被, by (passive voice), with, on, near  
+鼻子, nose, mouth, eyes, ears  
+比较, compare, ignore, guess, consider  
+比赛, competition, meal, birthday, meeting  
+笔记本, notebook, calculator, backpack, chair  
+必须, must, should, could, may  
+变化, change, stability, consistency, rest  
+别人, others, self, you, me  
+冰箱, refrigerator, microwave, stove, oven  
+不但, not only, also, but, either  
+才, just, before, after, once  
+菜单, menu, grocery list, shopping cart, receipt  
+参加, participate, leave, cancel, ignore  
+草, grass, tree, rock, mountain  
+层, floor, roof, basement, wall  
+差, difference, same, good, excellent  
+超市, supermarket, restaurant, library, park  
+衬衫, shirt, pants, hat, shoes  
+成绩, grade, height, weight, attitude  
+城市, city, village, island, desert  
+迟到, be late, be on time, leave early, skip  
+除了, except for, including, within, between  
+船, boat, airplane, car, bus  
+春天, spring, summer, winter, fall  
+词典, dictionary, map, notebook, textbook  
+聪明, smart, dumb, lazy, weak  
+打扫, clean, write, run, talk  
+打算, plan, forget, lose, cancel  
+带, bring, take, leave, drop  
+担心, worry, relax, forget, ignore  
+蛋糕, cake, bread, pie, rice  
+当然, of course, maybe, sometimes, never  
+灯, lamp, chair, table, wall  
+地, ground, sky, mountain, ocean  
+地方, place, book, object, person  
+地铁, subway, airplane, bus, car  
+地图, map, book, letter, diary  
+电梯, elevator, stairs, tunnel, door  
+邮件, mail, phone, book, message  
+东, east, west, north, south  
+冬天, winter, spring, summer, fall  
+动物, animal, vegetable, rock, tree  
+短, short (length), long, wide, tall  
+段, paragraph, sentence, chapter, word  
+锻炼, exercise, sleep, eat, work  
+多么, how (exclamatory), where, when, why  
+饿, hungry, full, tired, thirsty  
+耳朵, ear, nose, mouth, eye  
+而且, moreover, but, however, because  
+发, send, receive, wait, ignore  
+发烧, fever, cold, headache, tired  
+发现, discover, lose, ignore, forget  
+方便, convenient, inconvenient, difficult, easy  
+放, put, take, leave, hide  
+放心, be at ease, worry, fear, stress  
+分, minute, hour, day, week  
+附近, nearby, far, distant, close  
+复习, review, ignore, forget, test  
+干净, clean, dirty, messy, disorganized  
+感冒, cold, fever, headache, stomach ache  
+感兴趣, interested, bored, indifferent, tired  
+刚才, just now, soon, later, never  
+个子, height, weight, size, age  
+根据, according to, without, despite, for  
+跟, with, against, without, after  
+更, more, less, same, equal  
+公斤, kilogram, pound, liter, ounce  
+公园, park, street, mall, store  
+故事, story, truth, essay, poem  
+刮风, windy, rainy, sunny, snowy  
+关, close, open, move, speak  
+关系, relationship, friend, family, job  
+关心, care, ignore, avoid, disregard  
+关于, about, beyond, before, after  
+国家, country, city, continent, ocean  
+过, pass, stop, start, end  
+过去, past, present, future, current  
+还是, still, yet, again, already  
+害怕, afraid, excited, happy, calm  
+黑板, blackboard, whiteboard, desk, chair  
+后来, later, now, before, then  
+护照, passport, ID card, ticket, visa  
+花, flower, tree, rock, plant  
+画, paint, write, read, draw  
+坏, bad, good, excellent, nice  
+欢迎, welcome, goodbye, farewell, hello  
+还, still, never, again, yet  
+环境, environment, building, car, person  
+换, exchange, stay, keep, ignore  
+黄河, Yellow River, Nile River, Yangtze River, Amazon River  
+回答, answer, question, inquiry, ask  
+会议, meeting, phone call, message, email  
+或者, or, and, neither, but  
+几乎, almost, completely, entirely, totally  
+机会, opportunity, obstacle, problem, challenge  
+极, extremely, mildly, slightly, moderately  
+记得, remember, forget, ignore, lose  
+季节, season, month, week, day  
+检查, check, ignore, dismiss, avoid  
+简单, simple, complicated, difficult, hard  
+见面, meet, avoid, ignore, separate  
+健康, healthy, sick, tired, weak  
+讲, speak, listen, read, write  
+教, teach, learn, listen, forget  
+角, corner, edge, center, side  
+脚, foot, hand, head, arm  
+接, receive, give, send, throw  
+街道, street, house, office, park  
+节目, program, book, note, letter  
+节日, holiday, workday, meeting, deadline  
+结婚, marriage, divorce, separation, breakup  
+结束, end, begin, continue, pause  
+解决, solve, ignore, worsen, avoid  
+借, borrow, lend, steal, hide  
+经常, often, never, seldom, rarely  
+经过, pass, stop, start, return  
+经理, manager, worker, assistant, customer  
+久, long (time), short (time), fast, slow  
+旧, old, new, fresh, modern  
+句子, sentence, word, paragraph, chapter  
+决定, decide, hesitate, ignore, doubt  
+可爱, cute, ugly, rude, mean  
+渴, thirsty, hungry, tired, full  
+刻, moment, hour, day, year  
+客人, guest, host, friend, neighbor  
+空调, air conditioner, heater, fan, window  
+口, mouth, eye, ear, nose  
+哭, cry, laugh, smile, shout  
+裤子, pants, shirt, jacket, shoes  
+筷子, chopsticks, spoon, knife, fork  
+蓝, blue, red, green, yellow  
+老, old, young, new, fresh  
+离开, leave, stay, arrive, return  
+礼物, gift, receipt, bill, letter  
+历史, history, science, math, literature  
+脸, face, back, hand, leg  
+练习, practice, forget, ignore, stop  
+辆, vehicle, book, house, chair  
+聊天儿, chat, ignore, fight, sleep  
+了解, understand, ignore, forget, confuse  
+邻居, neighbor, friend, stranger, enemy  
+留学, study abroad, stay home, work, travel  
+楼, building, room, house, street  
+绿, green, blue, yellow, red  
+马, horse, dog, cat, cow  
+马上, immediately, later, never, soon  
+满意, satisfied, dissatisfied, angry, upset  
+帽子, hat, shoes, pants, shirt  
+米, rice, bread, noodles, soup  
+面包, bread, rice, soup, cake  
+明白, understand, confuse, forget, ignore  
+拿, take, leave, drop, forget  
+奶奶, grandmother, aunt, uncle, cousin  
+南, south, north, east, west  
+难, difficult, easy, hard, simple  
+难过, sad, happy, excited, calm  
+年级, grade, subject, test, homework  
+年轻, young, old, middle-aged, ancient  
+鸟, bird, dog, cat, fish  
+努力, effort, laziness, indifference, boredom  
+爬山, climb a mountain, swim, sleep, run  
+盘子, plate, cup, bowl, spoon  
+胖, fat, skinny, muscular, tall  
+皮鞋, leather shoes, sandals, slippers, boots  
+啤酒, beer, water, juice, soda  
+瓶子, bottle, cup, plate, spoon  
+其实, actually, never, always, mostly  
+其他, other, same, similar, identical  
+奇怪, strange, normal, usual, familiar  
+骑, ride, drive, walk, fly  
+起飞, take off, land, stop, sit  
+起来, get up, sit down, lie down, sleep  
+清楚, clear, unclear, vague, confused  
+请假, ask for leave, work, attend, skip  
+秋, autumn, winter, spring, summer  
+裙子, skirt, pants, shirt, jacket  
+然后, then, before, after, never  
+热情, enthusiastic, indifferent, cold, rude  
+认为, think, ignore, forget, doubt  
+认真, serious, careless, lazy, indifferent  
+容易, easy, hard, difficult, complicated  
+如果, if, when, although, but  
+伞, umbrella, hat, coat, gloves  
+上网, surf the internet, read a book, sleep, work  
+生气, angry, calm, happy, excited  
+声音, sound, silence, noise, echo  
+世界, world, country, city, town  
+试, try, ignore, avoid, forget  
+瘦, thin, fat, tall, short  
+叔叔, uncle, aunt, grandmother, cousin  
+舒服, comfortable, uncomfortable, painful, tiring  
+树, tree, flower, bush, grass  
+数学, math, history, science, literature  
+刷牙, brush teeth, eat, sleep, read  
+双, pair, single, one, trio  
+水平, level, skill, talent, position  
+司机, driver, passenger, teacher, student  
+太阳, sun, moon, star, planet  
+特别, special, ordinary, common, usual  
+疼, painful, painless, easy, comfortable  
+提高, improve, worsen, ignore, stop  
+体育, sports, literature, art, music  
+甜, sweet, salty, sour, bitter  
+条, strip, square, circle, cube  
+同事, colleague, boss, customer, friend  
+同意, agree, disagree, doubt, question  
+头发, hair, ear, mouth, eye  
+突然, suddenly, gradually, slowly, eventually  
+图书馆, library, school, office, restaurant  
+腿, leg, arm, hand, foot  
+完成, complete, start, leave, forget  
+碗, bowl, plate, cup, fork  
+万, ten thousand, hundred, thousand, million  
+忘记, forget, remember, recall, ignore  
+为, for, against, without, beside  
+为了, in order to, without, after, before  
+位, position, place, number, amount  
+文化, culture, language, country, city  
+西, west, east, north, south  
+习惯, habit, exception, rule, surprise  
+洗手间, bathroom, kitchen, bedroom, living room  
+洗澡, take a shower, sleep, eat, work  
+夏, summer, winter, spring, autumn  
+先, first, last, never, always  
+相信, believe, doubt, question, ignore  
+香蕉, banana, apple, orange, pear  
+向, towards, away, against, around  
+像, like, unlike, different, opposite  
+小心, careful, careless, reckless, negligent  
+校长, principal, teacher, student, counselor  
+新闻, news, book, movie, play  
+新鲜, fresh, stale, old, rotten  
+信用卡, credit card, debit card, ID card, library card  
+行李箱, suitcase, backpack, briefcase, purse  
+熊猫, panda, lion, tiger, elephant  
+需要, need, want, wish, ignore  
+选择, choose, ignore, refuse, reject  
+要求, request, ignore, deny, forget  
+爷爷, grandfather, grandmother, uncle, aunt  
+一定, definitely, maybe, possibly, never  
+一共, in total, individually, separately, few  
+一会儿, a while, forever, never, always  
+一样, same, different, opposite, strange  
+以前, before, after, later, now  
+一般, general, special, specific, unique  
+一边, side, corner, edge, middle  
+一直, always, never, sometimes, often  
+音乐, music, silence, noise, sound  
+银行, bank, store, market, restaurant  
+饮料, beverage, food, snack, fruit  
+应该, should, could, may, must  
+影响, influence, ignore, avoid, forget  
+用, use, discard, ignore, waste  
+游戏, game, work, homework, task  
+有名, famous, unknown, hidden, anonymous  
+又, again, never, always, sometimes  
+遇到, meet, avoid, miss, ignore  
+元, yuan, dollar, euro, pound  
+愿意, willing, unwilling, hesitant, unsure  
+月亮, moon, sun, star, cloud  
+越, more, less, same, equal  
+站, stand, sit, sleep, lie  
+张, piece, pair, batch, group  
+长, long, short, wide, narrow  
+着急, anxious, calm, relaxed, bored  
+照顾, take care of, ignore, harm, avoid  
+照片, photo, video, painting, drawing  
+照相机, camera, phone, television, computer  
+只, only, both, neither, all  
+只有, only, some, none, both  
+中间, middle, corner, edge, outside  
+终于, finally, immediately, quickly, suddenly  
+种, kind, type, color, shape  
+重要, important, unimportant, trivial, irrelevant  
+周末, weekend, weekday, holiday, vacation  
+主要, main, minor, secondary, unimportant  
+注意, pay attention, ignore, neglect, forget  
+自己, self, other, friend, neighbor  
+自行车, bicycle, car, bus, airplane  
+总是, always, never, sometimes, occasionally  
+嘴, mouth, ear, eye, nose  
+最后, last, first, middle, beginning  
+最近, recently, long ago, never, always  
+作业, homework, play, rest, entertainment  
+中文, Chinese, English, French, Spanish  

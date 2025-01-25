@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSK Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <!-- Timer -->
+    <div id="timer" class="absolute top-4 right-4 text-gray-700 font-bold"></div>
+
+    <div id="app" class="w-full max-w-lg bg-white p-6 rounded shadow-lg">
+        <!-- Name Input Section -->
+        <div id="name-section" class="text-center">
+            <h1 class="text-3xl font-bold text-blue-600">Welcome to HSK Quiz</h1>
+            <p class="text-gray-600 mt-2">Test your Chinese vocabulary knowledge!</p>
+            <input id="name-input" type="text" placeholder="Enter your name"
+                class="mt-4 p-2 border rounded w-full focus:outline-blue-500">
+            <button id="start-btn"
+                class="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Start</button>
+        </div>
+
+        <!-- HSK Level Selection Section -->
+        <div id="hsk-level-section" class="hidden text-center">
+            <h1 class="text-2xl font-bold text-blue-600">Choose an HSK Level</h1>
+            <div class="grid grid-cols-3 gap-4 mt-4">
+                <!-- HSK Level Buttons -->
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-section" class="hidden container mx-auto max-w-lg p-6 bg-white rounded-lg shadow-md">
+            <h1 id="quiz-title" class="text-3xl font-extrabold text-blue-700 mb-4 tracking-tight"></h1>
+            <p id="progress" class="text-gray-500 text-sm mb-3 italic"></p>
+            <p id="question-word" class="text-2xl font-bold text-gray-800 mb-6 text-center"></p>
+            <div id="options" class="grid grid-cols-2 gap-4 mb-6">
+            </div>
+            <button id="play-audio"
+                class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50">
+                Play Pronunciation
+            </button>
+        </div>
+
+
+        <!-- Results Section -->
+        <div id="results-section" class="hidden text-center">
+            <h1 class="text-3xl font-bold text-blue-600">Quiz Finished!</h1>
+            <p id="score" class="text-xl mt-4"></p>
+            <p id="time-taken" class="text-gray-600 mt-2"></p>
+            <h2 class="text-lg font-bold mt-4 text-gray-700">Leaderboard</h2>
+            <ul id="leaderboard" class="mt-2 space-y-1">
+                <!-- Leaderboard entries will be dynamically added here -->
+            </ul>
+            <div id="share-section" class="mt-6 space-y-4">
+                <!-- Share buttons will be added here -->
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        const nameSection = document.getElementById('name-section');
+        const hskLevelSection = document.getElementById('hsk-level-section');
+        const quizSection = document.getElementById('quiz-section');
+        const resultsSection = document.getElementById('results-section');
+        const shareSection = document.getElementById('share-section');
+
+        const nameInput = document.getElementById('name-input');
+        const startBtn = document.getElementById('start-btn');
+        const questionWord = document.getElementById('question-word');
+        const optionsDiv = document.getElementById('options');
+        const playAudioBtn = document.getElementById('play-audio');
+        const scoreDisplay = document.getElementById('score');
+        const leaderboardList = document.getElementById('leaderboard');
+        const progressDisplay = document.getElementById('progress');
+        const timerDisplay = document.getElementById('timer');
+        const timeTakenDisplay = document.getElementById('time-taken');
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let questions = [];
+        let startTime;
+        let selectedLevel;
+        const hskLevels = 6;
+
+        startBtn.addEventListener('click', () => {
+            const name = nameInput.value.trim();
+            if (!name) {
+                alert('Please enter your name.');
+                return;
+            }
+            nameSection.classList.add('hidden');
+            hskLevelSection.classList.remove('hidden');
+
+            const levelContainer = hskLevelSection.querySelector('.grid');
+            levelContainer.innerHTML = '';
+            for (let i = 1; i <= hskLevels; i++) {
+                const btn = document.createElement('button');
+                btn.textContent = `HSK ${i}`;
+                btn.className = 'bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded';
+                btn.addEventListener('click', () => startQuiz(i));
+                levelContainer.appendChild(btn);
+            }
+        });
+
+        function startQuiz(level) {
+            selectedLevel = level;
+
+            const quizTitle = document.getElementById('quiz-title');
+            quizTitle.innerText = `HSK ${level} Quiz`;
+
+            hskLevelSection.classList.add('hidden');
+            quizSection.classList.remove('hidden');
+
+            // Start timer
+            startTime = new Date();
+            updateTimer();
+            setInterval(updateTimer, 1000);
+
+            fetch(`hsk${level}.txt`)
+                .then(response => response.text())
+                .then(data => {
+                    const lines = data.split('\n');
+                    questions = lines.map(line => {
+                        const [word, ...options] = line.split(',');
+                        const answer = options[0];
+                        return {
+                            word,
+                            options: shuffleArray(options),
+                            answer,
+                            audio: `audio/${word}.mp3`
+                        };
+                    });
+
+                    // Shuffle questions
+                    questions = shuffleArray(questions);
+
+                    displayQuestion();
+                })
+                .catch(error => console.error('Error loading questions:', error));
+        }
+
+
+        function updateTimer() {
+            const elapsed = Math.floor((new Date() - startTime) / 1000);
+            const minutes = String(Math.floor(elapsed / 60)).padStart(2, '0');
+            const seconds = String(elapsed % 60).padStart(2, '0');
+            timerDisplay.textContent = `Time: ${minutes}:${seconds}`;
+        }
+
+        function displayQuestion() {
+            const question = questions[currentQuestionIndex];
+            progressDisplay.textContent = `Question ${currentQuestionIndex + 1} / ${questions.length}`;
+            questionWord.textContent = question.word;
+            optionsDiv.innerHTML = '';
+
+            question.options.forEach(option => {
+                const btn = document.createElement('button');
+                btn.textContent = option;
+                btn.className = 'bg-gray-200 px-4 py-2 rounded hover:bg-gray-300';
+                btn.addEventListener('click', () => handleAnswer(option === question.answer));
+                optionsDiv.appendChild(btn);
+            });
+
+            playAudioBtn.onclick = () => playAudio(question.audio);
+        }
+
+        function handleAnswer(isCorrect) {
+            if (isCorrect) score++;
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                displayQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            quizSection.classList.add('hidden');
+            resultsSection.classList.remove('hidden');
+            const totalTime = Math.floor((new Date() - startTime) / 1000);
+            const minutes = String(Math.floor(totalTime / 60)).padStart(2, '0');
+            const seconds = String(totalTime % 60).padStart(2, '0');
+            scoreDisplay.textContent = `Your Score: ${score}/${questions.length}`;
+            timeTakenDisplay.textContent = `Time Taken: ${minutes}:${seconds}`;
+
+            // Leaderboard
+            leaderboardList.innerHTML = '';
+            const leaderboard = [
+                { name: 'Alice', score: 5 },
+                { name: 'Bob', score: 4 },
+                { name: 'Charlie', score: 3 },
+            ];
+            leaderboard.forEach(entry => {
+                const li = document.createElement('li');
+                li.textContent = `${entry.name}: ${entry.score}`;
+                leaderboardList.appendChild(li);
+            });
+
+            // sharing and certificate logic
+            addShareOptions();
+        }
+
+        function addShareOptions() {
+            shareSection.innerHTML = '';
+
+            // WhatsApp
+            const waBtn = createShareButton('Share on WhatsApp', 'bg-green-500', () => {
+                const shareText = `I scored ${score}/${questions.length} in the HSK ${selectedLevel} Quiz!`;
+                const waURL = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+                window.open(waURL, '_blank');
+            });
+            shareSection.appendChild(waBtn);
+
+            // LinkedIn
+            const linkedInBtn = createShareButton('Share on LinkedIn', 'bg-blue-700', () => {
+                const shareURL = `https://www.linkedin.com/shareArticle?mini=true&url=https://yourquiz.com&title=My HSK Quiz Score&summary=Scored ${score}/${questions.length} in HSK ${selectedLevel}`;
+                window.open(shareURL, '_blank');
+            });
+            shareSection.appendChild(linkedInBtn);
+
+            // Certificate Button
+            const certBtn = createShareButton('Download Certificate', 'bg-blue-500', () => {
+                generateCertificate(nameInput.value, score, questions.length, selectedLevel);
+            });
+
+            shareSection.appendChild(certBtn);
+        }
+
+        function createShareButton(text, bgClass, onClick) {
+            const btn = document.createElement('button');
+            btn.textContent = text;
+            btn.className = `px-4 py-2 rounded ${bgClass} hover:${bgClass}-600 text-white`;
+            btn.addEventListener('click', onClick);
+            return btn;
+        }
+
+        function generateCertificate(name, score, totalQuestions, level) {
+            const canvas = document.createElement('canvas');
+            canvas.width = 1200;
+            canvas.height = 800;
+            const ctx = canvas.getContext('2d');
+
+            // Background
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Border
+            ctx.strokeStyle = '#4f46e5';
+            ctx.lineWidth = 10;
+            ctx.strokeRect(50, 50, canvas.width - 100, canvas.height - 100);
+
+            // Title
+            ctx.font = '50px Arial';
+            ctx.fillStyle = '#4f46e5';
+            ctx.textAlign = 'center';
+            ctx.fillText('Certificate of Achievement', canvas.width / 2, 150);
+
+            // Subtitle
+            ctx.font = '30px Arial';
+            ctx.fillStyle = '#374151';
+            ctx.fillText('Presented to', canvas.width / 2, 250);
+
+            // Name
+            ctx.font = '60px Helvetica';
+            ctx.fillStyle = '#1f2937';
+            ctx.fillText(name, canvas.width / 2, 350);
+
+            // Score and Level
+            ctx.font = '30px Arial';
+            ctx.fillStyle = '#374151';
+            ctx.fillText(`HSK Level: ${level}`, canvas.width / 2, 450);
+            ctx.fillText(`Score: ${score}/${totalQuestions}`, canvas.width / 2, 500);
+            ctx.fillText(`Percentage: ${(score / totalQuestions) * 100}%`, canvas.width / 2, 550);
+
+            // Footer
+            ctx.font = '20px Arial';
+            ctx.fillStyle = '#9ca3af';
+            ctx.fillText(`Date: ${new Date().toLocaleDateString()}`, canvas.width / 2, 650);
+
+            // Download Buttons
+            const imageLink = document.createElement('a');
+            imageLink.download = `${name}_Certificate_HSK${level}.png`;
+            imageLink.href = canvas.toDataURL('image/png');
+            imageLink.textContent = 'Download as Image';
+            imageLink.className = 'px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600';
+
+            const pdfButton = document.createElement('button');
+            pdfButton.textContent = 'Download as PDF';
+            pdfButton.className = 'px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600';
+            pdfButton.addEventListener('click', () => {
+                const pdf = new jsPDF({
+                    orientation: 'landscape',
+                    unit: 'px',
+                    format: [canvas.width, canvas.height],
+                });
+                pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, canvas.width, canvas.height);
+                pdf.save(`${name}_Certificate_HSK${level}.pdf`);
+            });
+
+            // Append to Results Section
+            const resultsSection = document.getElementById('results-section');
+            resultsSection.appendChild(imageLink);
+            resultsSection.appendChild(pdfButton);
+        }
+
+        function playAudio(audioPath) {
+            const audio = new Audio(audioPath);
+            audio.play();
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+    </script>
+</body>
+
+</html>

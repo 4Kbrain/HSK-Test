@@ -1,0 +1,150 @@
+吧, modal particle, spoon, stone, drink  
+白, white, light, bright, black  
+百, hundred, thousand, million, dozen  
+帮助, help, assist, delay, borrow  
+报纸, newspaper, pen, book, glasses  
+比, compare, contest, ignore, lift  
+别, don't, other, same, ignore  
+宾馆, hotel, park, school, museum  
+长, long, short, heavy, thin  
+唱歌, sing, dance, write, act  
+出, go out, come in, open, close  
+穿, wear, eat, fly, drink  
+次, time, occasion, book, money  
+从, from, to, across, under  
+错, wrong, mistake, right, money  
+打篮球, play basketball, swim, run, dance  
+大家, everyone, nobody, somebody, nothing  
+但是, but, and, because, so  
+到, arrive, leave, eat, sleep  
+得, structural particle, give, take, hold  
+等, wait, sit, fly, forget  
+弟弟, younger brother, elder brother, cousin, friend  
+第一, first, last, middle, only  
+懂, understand, forget, buy, fly  
+对, correct, wrong, big, small  
+房间, room, car, train, desk  
+非常, very, extremely, not, small  
+服务员, waiter, teacher, student, driver  
+高, tall, short, heavy, light  
+告诉, tell, listen, ignore, laugh  
+哥哥, elder brother, younger sister, father, friend  
+给, give, take, eat, walk  
+公共汽车, bus, train, airplane, bicycle  
+公司, company, garden, restaurant, hospital  
+贵, expensive, cheap, free, small  
+还, still, return, sell, buy  
+孩子, child, father, dog, chair  
+好吃, delicious, bitter, sour, hard  
+黑, black, white, red, yellow  
+红, red, blue, green, purple  
+火车站, train station, airport, hospital, school  
+机场, airport, hotel, restaurant, office  
+鸡蛋, egg, rice, chicken, bread  
+件, item, person, place, thing  
+觉得, feel, ignore, push, laugh  
+教室, classroom, bathroom, kitchen, garden  
+姐姐, elder sister, younger brother, mother, teacher  
+介绍, introduce, dismiss, ignore, reject  
+进, enter, leave, jump, cry  
+近, close, far, high, low  
+就, just, big, wrong, sell  
+咖啡, coffee, tea, water, juice  
+开始, start, end, run, fly  
+考试, exam, homework, game, sport  
+可能, maybe, definitely, never, always  
+可以, can, must, shouldn't, won’t  
+课, class, song, play, act  
+快, fast, slow, stop, heavy  
+快乐, happy, sad, tired, bored  
+累, tired, happy, funny, lazy  
+离, away, near, high, below  
+两, two, one, three, five  
+零, zero, ten, hundred, thousand  
+路, road, river, school, house  
+旅游, travel, eat, sleep, run  
+卖, sell, buy, eat, walk  
+慢, slow, fast, big, bright  
+忙, busy, lazy, relaxed, calm  
+每, every, some, none, few  
+妹妹, younger sister, elder brother, friend, cousin  
+门, door, window, desk, chair  
+面条, noodles, rice, soup, bread  
+男, male, female, old, young  
+您, you (formal), he, they, we  
+牛奶, milk, water, juice, coffee  
+女, female, male, big, old  
+旁边, beside, above, below, behind  
+跑步, run, swim, fly, laugh  
+便宜, cheap, expensive, big, hard  
+票, ticket, money, paper, chair  
+妻子, wife, husband, friend, child  
+起床, get up, sleep, sit, run  
+千, thousand, hundred, ten, five  
+铅笔, pencil, eraser, ruler, book  
+晴, sunny, cloudy, rainy, stormy  
+去年, last year, next year, this year, next month  
+让, let, take, throw, jump  
+日, day, night, week, month  
+上班, go to work, sleep, study, run  
+身体, body, head, arm, foot  
+生病, sick, healthy, tired, busy  
+生日, birthday, holiday, festival, workday  
+时间, time, book, game, friend  
+事情, matter, person, place, tool  
+手表, watch, phone, chair, table  
+手机, phone, pen, pencil, ruler  
+说话, speak, write, jump, laugh  
+送, send, eat, run, sell  
+虽然, although, because, but, so  
+所以, so, because, although, and  
+它, it, he, she, we  
+踢足球, play football, swim, run, write  
+题, question, answer, book, letter  
+跳舞, dance, write, eat, jump  
+外, outside, inside, above, under  
+完, finish, start, buy, run  
+玩儿, play, sleep, run, eat  
+晚上, evening, morning, night, afternoon  
+往, toward, away, jump, sleep  
+为什么, why, because, although, and  
+问, ask, ignore, run, eat  
+问题, question, answer, book, place  
+西瓜, watermelon, apple, orange, banana  
+希望, hope, laugh, forget, run  
+洗, wash, eat, fly, buy  
+小时, hour, minute, day, year  
+笑, laugh, cry, run, jump  
+新, new, old, big, tired  
+姓, surname, name, place, person  
+休息, rest, work, run, jump  
+雪, snow, rain, sun, cloud  
+颜色, color, taste, sound, smell  
+眼睛, eye, nose, ear, hand  
+羊肉, mutton, beef, chicken, pork  
+药, medicine, book, place, pencil  
+要, want, throw, jump, ignore  
+也, also, never, only, not  
+一下, once, twice, run, jump  
+已经, already, not yet, tomorrow, yesterday  
+一起, together, alone, far, behind  
+意思, meaning, feeling, book, place  
+因为, because, although, and, but  
+阴, cloudy, sunny, rainy, snowy  
+游泳, swim, run, write, eat  
+右边, right side, left side, above, below  
+鱼, fish, meat, rice, bread  
+远, far, near, heavy, fast  
+运动, exercise, sleep, write, cry  
+再, again, never, yesterday, tomorrow  
+早上, morning, evening, night, afternoon  
+丈夫, husband, wife, child, teacher  
+找, find, lose, run, jump  
+着, indicating action in progress, ignore, run, sell  
+真, really, never, always, sometimes  
+正在, in the process of, before, after, instead  
+知道, know, forget, buy, jump  
+准备, prepare, ignore, eat, fly  
+走, walk, fly, run, sleep  
+最, most, least, never, always  
+左边, left side, right side, behind, above  
